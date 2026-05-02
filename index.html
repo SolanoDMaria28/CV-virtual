@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV | Maria Belen Solano Lopez</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --text-color: #1f2937;
+            --bg-color: #f3f4f6;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 { margin: 0; color: var(--primary-color); }
+        .subtitle { font-size: 1.2rem; color: #6b7280; font-weight: bold; }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+
+        .contact-info a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .contact-info a:hover {
+            color: var(--primary-color);
+        }
+
+        section { margin-bottom: 30px; }
+
+        h2 {
+            border-left: 4px solid var(--primary-color);
+            padding-left: 10px;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+        }
+
+        .item { margin-bottom: 20px; }
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            gap: 10px;
+        }
+
+        .skill-tag {
+            background: #e5e7eb;
+            padding: 5px 10px;
+            border-radius: 4px;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+          
+
+        @media (max-width: 600px) {
+            .container { margin: 10px; padding: 20px; }
+            .item-header { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Maria Belen Solano Lopez</h1>
+        <p class="subtitle">Estudiante de Ingeniería en Sistemas / Diseño Web</p>
+        
+        <div class="contact-info">
+            <!-- Tu correo actualizado aquí -->
+            <a href="mailto:solanolopezmariabelen77@gmail.com">
+                <i class="fas fa-envelope"></i> solanolopezmariabelen77@gmail.com
+            </a>
+            <a href="https://linkedin.com/in/MariaSolano" target="_blank">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="https://github.com/SolanoDMaria" target="_blank">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+            <span><i class="fas fa-map-marker-alt"></i> Carazo-Jinotepe, Nicaragua</span>
+        </div>
+    </header>
+
+    <section id="sobre-mi">
+        <h2>Sobre mí</h2>
+        <p>
+            Profesional apasionada por la tecnología con experiencia en diseño de páginas web. 
+            Me enfoco en crear soluciones eficientes, escalables y con un código limpio. 
+            ¡Siempre lista para aprender nuevas herramientas de programación!
+        </p>
+    </section>
+
+    <section id="experiencia">
+        <h2>Experiencia</h2>
+        <div class="item">
+            <div class="item-header">
+                <span>Inatec</span>
+                <span>2024 - 2025</span>
+            </div>
+            <i>Pasante de Ingeniería</i>
+            <ul>
+                <li>Optimización de procesos internos en un 20%.</li>
+                <li>Desarrollo de interfaces utilizando tecnologías modernas y diseño responsive.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="educacion">
+        <h2>Educación</h2>
+        <div class="item">
+            <div class="item-header">
+                <span>Universidad Ricardo Morales Avilés</span>
+                <span>En curso</span>
+            </div>
+            <p>Ingeniería en Sistemas de Información</p>
+        </div>
+        <div class="item">
+            <div class="item-header">
+                <span>Escuela secundaria Ramón Matus</span>
+                <span>Graduada 2022</span>
+            </div>
+            <p>Técnica general en computación</p>
+        </div>
+    </section>
+
+    <section id="habilidades">
+        <h2>Habilidades</h2>
+        <div class="skills-grid">
+            <div class="skill-tag">JavaScript</div>
+            <div class="skill-tag">HTML/CSS</div>
+            <div class="skill-tag">Git/GitHub</div>
+            <div class="skill-tag">Visual Studio</div>
+            <div class="skill-tag">Idioma Inglés</div>
+        </div>
+    </section>
+</div>
+
+</body>
+</html>
